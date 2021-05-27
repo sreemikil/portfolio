@@ -14,6 +14,11 @@ body{
 	padding-right: 24px;
 	padding-bottom: 24px;
 }
+.navbar-toggler1
+   {
+	border-radius: 10px;
+	background-color: #332256;
+   }
 .nav-link {
 	margin: 0 5px;
 }
