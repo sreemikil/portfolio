@@ -8,12 +8,15 @@ body{
 .navbar-header.col {
 	padding: 0 !important;
 }	
-.navbar {
+.navbar {		
 	position: fixed;
 	background: #fff;
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-bottom: 24px;
+	margin-top: 14px;
+	margin-left: 14px;
+	margin-right: 14px;
 }
 
 .nav-link {
@@ -31,7 +34,7 @@ body{
 	color: #555;
 	padding-left: 0;
 	font-size: 20px;
-	padding-right: 50%;
+	padding-right: 42%;
 	font-family: 'Raleway', sans-serif;
 }
 .navbar .navbar-brand b {
@@ -98,4 +101,8 @@ body{
 .about-photo {
 	max-height: 550px;
 	align-items: right;
+}
+
+.h1-home{
+	color:#332256;
 }
