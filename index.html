@@ -80,8 +80,8 @@
 }
 
 .h2-footer1{
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 18px;
+	font-weight: 550;
 	margin-bottom: -4px;
 	margin-top: 48px;
 }
@@ -182,6 +182,8 @@ border-radius: 15px;}
     text-align: left;
 }
 }
+
+
 
 
 
@@ -416,10 +418,68 @@ border-radius: 15px;}
 
 <section id="about" class="main-section ux-about-section2">
 	
-	<h3 class="h2 h2-footer1" style="color:#a3a3a3; margin-top:10px;">Skills</h2>
-	<h2 class="h2 h2-footer" style="color:#332256;">My Expertise</h2>	
+	<h3 class="h2 h2-footer1" style="color:#a3a3a3; margin-top:10px;">Nice to meet you</h2>
+	<h2 class="h2 h2-footer" style="color:#332256;">About</h2>
+	<section class="profile_area">
+		<div class="container">
+			<div class="profile_inner p_120">
+			 <div class="row">
+				 <div class="col-lg-5">
+					 <img class="img-fluid" src="dpimg.jpg" alt="">
+				 </div>
+				 <div class="col-lg-7">
+					<div class="personal_text">
+						<h6>Hello Everybody, i am</h6>
+						<h1 class="h1-home">Donald McKinney</h3>
+						<h4>Junior UI/UX Developer</h4>
+						<p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
+						<div class="tab">
+							<button class="tablinks" onclick="openCity(event, 'London')">London</button>
+							<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+							<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+						</div>
+
+						<div id="London" class="tabcontent" style="display: block;">
+							<h3>London</h3>
+							<p>London is the capital city of England.</p>
+						</div>
+
+						<div id="Paris" class="tabcontent">
+							<h3>Paris</h3>
+							<p>Paris is the capital of France.</p> 
+						</div>
+
+						<div id="Tokyo" class="tabcontent">
+							<h3>Tokyo</h3>
+							<p>Tokyo is the capital of Japan.</p>
+					</div>
+						<ul class="list personal_social">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					 </div>
+				 </div>
+			 </div>
+		</div>
+	 </div>
+ </section>	
 
 </section>
-
+<script>
+	function openCity(evt, cityName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	</script>
 </body>
 </html>
