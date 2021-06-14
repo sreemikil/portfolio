@@ -211,10 +211,10 @@ body {
   
   /* Style the buttons inside the tab */
   .tab button {
+	padding-left: 0px;
+	padding-right: 10px;
 	background-color: inherit;
 	float: left;
-	border: none;
-	outline: none;
 	cursor: pointer;
 	transition: 0.3s;
 	font-size: 17px;
@@ -225,19 +225,20 @@ body {
   /* Change background color of buttons on hover */
   .tab button:hover {
 	color: #332256;
+	outline: none;
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
 	color: #332256;
-	border: none;
+	outline: none;
   }
   
   /* Style the tab content */
   .tabcontent {
-	  margin-top: -15px;
+	margin-top: -15px;
 	display: none;
-	padding: 0px 8px;
+	/* padding: 0px 8px; */
   }
 
   @media screen and (max-width: 479px){
