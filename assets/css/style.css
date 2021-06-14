@@ -135,9 +135,17 @@ body {
 
 
   /*abot*/
+
+
+
+
+
+
+
   .profile_area .col-lg-7 {
 	vertical-align: middle;
-	align-self: center; }
+	align-self: center; 
+}
   
   
 	.profile_inner .personal_text {
