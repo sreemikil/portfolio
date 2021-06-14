@@ -216,9 +216,10 @@ body {
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 14px 0px;
 	transition: 0.3s;
 	font-size: 17px;
+	font-weight: bold;
+	color: #c9c9c9;
   }
   
   /* Change background color of buttons on hover */
@@ -229,10 +230,20 @@ body {
   /* Create an active/current tablink class */
   .tab button.active {
 	color: #332256;
+	border: none;
   }
   
   /* Style the tab content */
   .tabcontent {
+	  margin-top: -15px;
 	display: none;
-	padding: 6px 12px;
+	padding: 0px 8px;
   }
+
+  @media screen and (max-width: 479px){
+	.profile_inner .personal_text {
+		padding-left: 0px; 
+	margin-top: 24px;}
+	}
+
+ 
