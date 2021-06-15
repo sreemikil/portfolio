@@ -227,7 +227,7 @@ body {
 	transition: 0.3s;
 	font-size: 17px;
 	font-weight: bold;
-	color: #c9c9c9;
+	color: #ffffffa2;
   }
   
   /* Change background color of buttons on hover */
@@ -238,7 +238,7 @@ body {
   
   /* Create an active/current tablink class */
   .tab button.active {
-	color: #332256;
+	color: #ffffff;
 	outline: none;
   }
   
