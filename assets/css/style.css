@@ -266,11 +266,14 @@ body {
 	}
 	
 	.tab button::before { width: 0; }
-	.tab button::after { width: 30px; }
+	.tab button::after { 
+		width: 30px;
+		background: #332256;
+	 }
 	
 	.tab button:hover::before { width: 0; }
 	.tab button:hover::after { width: 100%; }
 	.tab button.active::after { 
 		width: 100%; 
-		background: #332256;;
+		background: #332256;
 	}
