@@ -172,7 +172,7 @@ body {
   .personal_text p {
 	max-width: 540px;
 	color: #777777;
-	margin-bottom: 40px; }
+	margin-bottom: 24px; }
   .personal_text .basic_info li {
 	margin-bottom: 15px; }
 	.personal_text .basic_info li a {
@@ -220,7 +220,7 @@ body {
   .tab button {
 	  margin-bottom: 14px;
 	padding-left: 0px;
-	padding-right: 30px;
+	padding-right: 20px;
 	background-color: inherit;
 	float: left;
 	cursor: pointer;
