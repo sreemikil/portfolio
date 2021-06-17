@@ -227,18 +227,18 @@ body {
 	transition: 0.3s;
 	font-size: 17px;
 	font-weight: bold;
-	color: #c9c9c9;
+	color: rgba(201, 201, 201, 0.397);
   }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-	color: #332256;
+	color: #ffffff;
 	outline: none;
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
-	color: #332256;
+	color: #ffffff;
 	outline: none;
   }
   
@@ -259,7 +259,7 @@ body {
 	.tab button::after {
 	  content: "";
 	  height: 4px;
-	  background: #c9c9c9;
+	  background: rgba(201, 201, 201, 0.397);
 	  display: block;
 	  transition: width 0.3s ease-in-out;
 	  margin: 0;
@@ -273,9 +273,9 @@ body {
 	.tab button:hover::before { width: 0; }
 	.tab button:hover::after { 
 		width: 100%;
-		background: #332256;
+		background: #ffffff;
 	 }
 	.tab button.active::after { 
 		width: 100%; 
-		background: #332256;
+		background: #ffffff;
 	}
