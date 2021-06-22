@@ -458,6 +458,29 @@ body {
     font-size: 24px;
 }
 
+.mail-icon{
+	-webkit-text-size-adjust: 100%;
+    font-family: Karla, sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 479px){
+	.mail-icon {
+		margin-bottom: 12px;
+	}
+	}
+
 .footer-link-wrap{
 	-webkit-text-size-adjust: 100%;
     font-family: Karla, sans-serif;
@@ -485,8 +508,8 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 65px;
-    height: 65px;
+    width: 56px;
+    height: 56px;
 	margin-right: 20px;
 	margin-bottom: 20px;
     -webkit-box-pack: center;
@@ -499,7 +522,7 @@ body {
     align-items: center;
     border-radius: 100px;
     background-color: #fff;
-    box-shadow: 4px 30px 55px 0 rgb(88 207 255 / 30%);
+    box-shadow: 4px 30px 55px 0 rgb(88 207 255 / 25%);
 }
 
 
@@ -557,6 +580,7 @@ body {
 	}
 	.footer-legal-text{
 		-webkit-text-size-adjust: 100%;
+		margin-bottom: 24px;
 		font-family: Karla, sans-serif;
 		line-height: 20px;
 		font-weight: 400;
