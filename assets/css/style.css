@@ -505,8 +505,6 @@ body {
     display: flex;
     width: 56px;
     height: 56px;
-	margin-right: 20px;
-	margin-bottom: 20px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -515,6 +513,7 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+	margin: 12px;
     border-radius: 100px;
     background-color: #fff;
     box-shadow: 4px 30px 55px 0 rgb(88 207 255 / 25%);
