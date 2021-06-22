@@ -290,15 +290,6 @@ body {
 	}
 
 
-	.container {
-		position: relative;
-		z-index: 5;
-		width: 100%;
-		max-width: 1170px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	
 	@media screen and (max-width: 991px){
 .contact-card-grid {
     max-width: 450px;
