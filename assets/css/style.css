@@ -573,14 +573,14 @@ body {
 		font-weight: 400;
 		box-sizing: border-box;
 		display: flex;
-		margin-top: 60px;
+		margin-top: 48px;
 		-webkit-box-pack: center;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
 	.footer-legal-text{
 		-webkit-text-size-adjust: 100%;
-		margin-bottom: 24px;
+		margin-bottom: 4px;
 		font-family: Karla, sans-serif;
 		line-height: 20px;
 		font-weight: 400;
