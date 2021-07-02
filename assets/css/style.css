@@ -1,5 +1,5 @@
 body {
-	background: #eeeeee;
+	background: #eeeeee00;
 	font-family: "Varela Round", sans-serif;
   }
   .form-inline {
@@ -10,7 +10,7 @@ body {
   }
   .navbar {
 	position: fixed;
-	background: #fff;
+	background: rgba(255, 255, 255, 0);
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-bottom: 24px;
@@ -736,7 +736,7 @@ body {
 }
 .scroller {
   width: 3px;
-  height: 10px;
+  height: 8px;
   border-radius: 100%;
   background-color: rgb(190, 190, 190);
   animation-name: scroll;
