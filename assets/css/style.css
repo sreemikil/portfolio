@@ -1,5 +1,5 @@
 body {
-	background: #ffffff00;
+	background: #ffffff;
 	font-family: "Varela Round", sans-serif;
   }
   .form-inline {
@@ -10,7 +10,7 @@ body {
   }
   .navbar {
 	position: fixed;
-	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.007);
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-bottom: 24px;
@@ -753,5 +753,65 @@ body {
 
 /* project */
 
+.div-block-5 {
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-direction: normal;
+  font-family:  Karla, sans-serif;
+  color: #130f49;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  white-space: normal;
+  box-sizing: border-box;
+  position: sticky;
+  top: 40px;
+  margin-left: -10px;
+}
+
+.title-project
+{
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-direction: normal;
+  line-height: 150%;
+  white-space: normal;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  font-family:  Karla, sans-serif;
+  color: #b4b2c5;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
 
 
+.div-block-5 p{
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-direction: normal;
+  white-space: normal;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family:  Karla, sans-serif;
+  color: #55527c;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.w-richtext:before, .w-richtext:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+
+.w-richtext h2{
+  color: #332256;
+  margin-bottom: 8px;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}

@@ -18,6 +18,7 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, .5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 	.navbar-toggler{
+        background-color: #ffffff;
 		height: 50px;
 		border: 0px;
 		border-radius: 18px;
@@ -207,9 +208,25 @@ border-radius: 15px;}
 
 
 
+@media screen and (max-width: 479px){
+.hero-text1 {
+    text-align: center;
+    margin-bottom: 48px;
+}
+}
 
+@media screen and (max-width: 479px){
+.mose {
+    display: none;
+}
+}
 
 /*wrk*/
+@media screen and (max-width: 479px){
+.wrk {
+    display: initial;
+}
+}
 
 
 
@@ -259,13 +276,11 @@ border-radius: 15px;}
 <header class="main-section landing-hero">
 	<div class="hero-grid">
 		<div id="w-node-b5c36fe5-a762-133e-d45b-faf67eb6f062-691629da" class="hero-text-container">
-			<h1 class="h1-home" >Hi, I&#x27;m Sreemikil</h1>
-			<p class="p-text-jumbo hero-text">
-				I’m a UI/UX designer and Programmer based in India. Also I&#x27;m a B.tech student with computer science as major
-				<!--<a href="https://www.padsplit.com" target="_blank" class="p-link">PadSplit</a>-->
-				, If you have a project or creative need that I can help with, please get in touch.
+			<h1 class="h1-home wrk" >C-Tracker</h1>
+			<p class="p-text-jumbo hero-text1">
+				Track your foot and confirm your footprints.
 			</p>
-			<div class="scroll-down-block-2 w-inline-block" style="margin-top: 86px;">
+			<div class="scroll-down-block-2 w-inline-block mose" style="margin-top: 86px;">
 				<div class="mousey">
 				  <div class="scroller"></div>
 				</div>
@@ -273,9 +288,11 @@ border-radius: 15px;}
 			  </div>
 		</div>
 		
-		<img src="assets/mikil35.png" id="w-node-_889b0a19-90e7-4d5f-130a-3c096ec4fa77-691629da" sizes="(max-width: 479px) 22vw, (max-width: 767px) 28vw, 100vw"alt="Photo of mikil" class="about-photo"/>
+		<img src="img/gallery/wrk1main.png" id="w-node-_889b0a19-90e7-4d5f-130a-3c096ec4fa77-691629da" sizes="(max-width: 479px) 22vw, (max-width: 767px) 28vw, 100vw"alt="Photo of mikil" class="about-photo wrk"/>
 	</div>
+    
 </header>
+<div style="height: 1035px;" class="bg-block-blue"></div>
 
 <!-- project-->
 
@@ -285,20 +302,13 @@ border-radius: 15px;}
       <div class="columns-6 w-row">
           <div class="column-6 w-col w-col-3">
               <div class="div-block-5">
-                  <div class="title-project">PROCESS</div>
+                  <div class="title-project">CONTENT</div>
                   <p><a href="#Introduction">Introduction</a></p>
-                  <p><a href="#Mission">Mission</a></p>
-                  <p><a href="#Timeline">Timeline</a></p>
-                  <p><a href="#Problem">Problem</a></p>
-                  <p><a href="#Approach">Approach &amp; Impact</a></p>
-                  <p><a href="#Process">Process</a></p>
-                  <p><a href="#Leadership">Leadership</a></p>
-                  <p><a href="#Marketing-Design">Marketing Design</a></p>
-                  <p><a href="#Growth">Growth</a></p>
-                  <p><a href="#Events">Events</a></p>
-                  <p><a href="#Program-Highlights">Programs</a></p>
-                  <p><a href="#Future-Plans">Future Plans</a></p>
-                  <p><a href="#Lessons-Learned">Lessons Learned</a></p>
+                  <p><a href="#Objective">Objective</a></p>
+                  <p><a href="#Howitworks">How it works</a></p>
+                  <p><a href="#lib">Libraries used</a></p>
+                  <p><a href="#config">How to configure</a></p>
+                  <p><a href="#run">How to run</a></p>
               </div>
           </div>
           <div class="w-col w-col-9">
@@ -306,337 +316,152 @@ border-radius: 15px;}
                   <div class="title-project">PROJECT</div>
                   <div id="Introduction">
                       <div class="rich-text-block open-sans w-richtext">
-                          <h2><strong>Founding a Community of 25,000+ People</strong></h2>
+                          <h2><strong>CTracker - Track your foot and confirm your footprints.</strong></h2>
                       </div>
                       <div class="w-richtext">
-                          <p>In April 2020, I founded the <a href="https://designbuddies.community/"
-                                  target="_blank">Design Buddies Community</a>. You can <a
-                                  href="https://discord.gg/rMEYCQt" target="_blank">join</a>, too!</p>
+                          <p>Participated in Build From Home by
+                            TinkerHub Foundation and we build a product from scratch and deploy
+                            it successfully in 7 days.</p>
                           <p>‍</p>
                       </div>
                       <div class="w-row">
                           <div class="w-col w-col-4">
                               <div class="w-richtext">
                                   <p><strong>Skills</strong>‍</p>
-                                  <p>Leadership</p>
-                                  <p>Product Strategy</p>
-                                  <p>Marketing Design</p>
+                                  <p>UI Design</p>
+                                  <p>User Research</p>
                               </div>
                           </div>
                           <div class="w-col w-col-4">
                               <div class="w-richtext">
-                                  <p><strong>Tools</strong></p>
-                                  <p><strong>‍</strong>Discord</p>
-                                  <p>Figma</p>
-                                  <p>Notion</p>
+                                  <p><strong>Team</strong></p>
+                                  <p><strong>‍</strong>Myself</p>
+                                  <p>Akhil T J</p>
+                                  <p>Suvarnesh K M</p>
                               </div>
                           </div>
                           <div class="w-col w-col-4">
                               <div class="w-richtext">
                                   <p><strong>My Role</strong></p>
-                                  <p>Founder</p>
-                                  <p>Design Lead</p>
+                                  <p>UI/UX Designer</p>
                                   <p>‍</p>
                               </div>
                           </div>
-                      </div>
+                      </div><!--
                       <div class="w-richtext">
                           <p>‍</p>
                           <p><strong>Team:</strong> Nadia Le, Jess Lam, Maggie Iglesias Pena, Yashar Hoang,
                               Kimberley Chong, Calum Mills, Nabil Mir, Jack Shugrue, Uju Oduah, Nadiminti Sarvani,
                               Dario Sanchez Martinez</p>
                           <p><strong>Strategic Advisors: </strong>Jonathan Javier, Jerry Lee</p>
-                      </div>
+                      </div>-->
                   </div>
-                  <div id="Mission">
+                  <div id="Objective">
                       <div class="w-richtext">
                           <p>‍</p>
                           <p>‍</p>
-                          <h2><strong>Mission Statement</strong></h2>
-                          <p>Design Buddies strives to connect and support designers from all backgrounds. All our
-                              programs are free to be inclusive.</p>
-                          <figure style="max-width:2920px"
+                          <h2><strong>Objective</strong></h2>
+                          <p>QR code scanner is a mobile application where shopkeepers have an app that shows QR 
+                              code and users can scan this QR code which will automatically add that user to the 
+                              visitor list. This should replace manual entry of contact details in the shop due to COVID.</p>
+                          <!--<figure style="max-width:2920px"
                               class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                               <div><img
                                       src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa21cb0e480abf7064053e5_DB%20Web.png"
                                       loading="lazy" alt="" /></div>
-                          </figure>
+                          </figure>-->
                       </div>
                   </div>
-                  <div id="Timeline">
+                  <div id="Howitworks">
                       <div class="w-richtext">
                           <p>‍</p>
                           <p>‍</p>
-                          <h2>Timeline</h2>
-                          <figure style="max-width:5502px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa21c5c8227ab7a0ec6d7f0_Timeline.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                          <p>Timeline last updated October 2020. </p>
+                          <h2>How it works</h2>
+                          <p><strong>Working of project</strong></p>
+                            <p>
+                                <ul role="list">
+                                    <li>User can login or create an account as merchant or customer.</li>
+                                    <li>User can login using Email and password.</li>
+                                    <li>User can create account by providing details like :</li>
+                                    <ul role="list">
+                                        <li>Profile pic</li>
+                                        <li>Name</li>
+                                        <li>Email</li>
+                                        <li>Pincode</li>
+                                        <li>Vaccine status</li>
+                                    </ul>
+                                    <li>As a customer, he can scan merchants QR code and confirm his footprint.</li>
+                                    <li> Also his previous visits will listed in the home screen.</li>
+                                    <li>As a merchant, he can generate QR code with shop details.</li>
+                                    <li>Also he is able to see daily visitors details and summary.</li>
+                                </ul>
+                            </p>
                       </div>
                   </div>
-                  <div id="Problem">
+                  <div id="lib">
                       <div class="w-richtext">
                           <p>‍</p>
                           <p>‍</p>
-                          <h2>Problem</h2>
-                          <p>Design Buddies was built on 3 problem areas:</p>
-                          <figure style="max-width:4556px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa21c7bcae562b8139d7421_Problem.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
+                          <h2>Libraries Used</h2>
+                          <p><strong>Libraries used in this project</strong>
+                          <p><ul role="list">
+                            <li>Flutter_svg</li>
+                            <li>Firebase_core</li>
+                            <li>Firebase_auth</li>
+                            <li>Firebase_database</li>
+                            <li>Fluttertoast</li>
+                            <li>Pretty_qr_code</li>
+                            <li>QR_code_scanner</li>
+                            <li>Image_picker</li>
+                            <li>File_picker</li>
+                            <li>Lottie</li>
+                        </ul></p>
                       </div>
                   </div>
-                  <div id="Approach">
+                  <div id="config">
                       <div class="w-richtext">
                           <p>‍</p>
                           <p>‍</p>
-                          <h2>Approach &amp; Impact</h2>
-                          <p>Design Buddies is an active design community.</p>
+                          <h2>How to configure</h2>
+                          <p><strong>Steps to configre</strong></p>
                           <p> </p>
-                          <figure style="max-width:2238px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa2f60863133b6759ef4bfc_Approach.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
+                          <ul role="list">
+                            <li>Install Flutter</li>
+                            <li>Set up an editor(Android Studio/VS Code)</li>
+                            <li>Test drive</li>
+                            <li>Clone C-tracker</li>
+                            <li>Run</li>
+                          </ul>
                       </div>
                   </div>
-                  <div id="Process">
+                  <div id="run">
                       <div class="w-richtext">
-                          <p>Our Impact section last updated October 2020.</p>
+                          <p></p>
                           <p>‍</p>
-                          <h2>Process</h2>
-                          <p>I work closely with my admin and moderator team to implement and improve our
-                              community.</p>
+                          <h2>How to run</h2>
+                          <p>Follow these steps to install the APK on a connected Android device.</p>
+                          <p><strong>From the command line:</strong></p>
+                          <ul role="list">
+                            <li>Connect your Android device to your computer with a USB cable.</li>
+                            <li>Set up an editor(Android Studio/VS Code)</li>
+                            <li>Enter cd [project].</li>
+                            <li>Clone C-tracker</li>
+                            <li>Run flutter install.</li>
+                          </ul><br>
                           <figure style="max-width:1978px"
                               class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                               <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa35a86a607123900bc3093_Process%20new.png"
+                                      src="img/dsgnban.png"
                                       loading="lazy" alt="" /></div>
                           </figure>
+                          <br>
+                          
+                          <p style="margin-bottom: 12px;"><strong>Download now:</strong></p>
+                          <a href="https://drive.google.com/file/d/1AKiJjP-qoJQP1FG9tdlceQLlRSXX3bH_/view?usp=sharing"><img src="img/download.png" 
+                            alt="Download on the App Store" height="48"></a>
                       </div>
                   </div>
-                  <div id="Leadership">
-                      <div class="rich-text-block-17 w-richtext">
-                          <p>‍</p>
-                          <p>‍</p>
-                          <h2>Leadership</h2>
-                          <h4>Admin Team Leadership</h4>
-                          <p>I lead a team of 11 admins. I placed each in separate roles and delegate tasks based
-                              on their interests: Community, Social Media, Design, Logistics, Events, Finance, and
-                              Content Creators.</p>
-                          <p>I facilitate a series of administrative meetings:</p>
-                          <ul role="list">
-                              <li>Team standup (weekly)</li>
-                              <li>Office hours / critique (weekly – drop in and get feedback on anything)</li>
-                              <li>Content creators (weekly, hosted by content creators)</li>
-                              <li>Focus group (monthly)</li>
-                          </ul>
-                          <p>Our team organizes everything on Notion:</p>
-                          <figure style="max-width:1408px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa35ab5cffb5353b379255a_notion%20db%20new.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                          <p>In the beginning, I made the mistake of taking in everyone who wanted to help out to
-                              be on the admin team. I didn’t have a vetting process nor set expectations from the
-                              start. It resulted in admins feeling confused of what to do. We were also a small
-                              team struggling with balance.</p>
-                          <p>I then wrote roles with descriptions and opened up admin applications. In the roles,
-                              I was specific about the responsibilities and expectations.</p>
-                          <p>Our applications were open in July with under 2,000 members in the community. In 1
-                              week, we had 70 applicants. We interviewed 11 from those and took on 4. By having
-                              members apply for specific positions, the expectations were clear.</p>
-                          <p>‍</p>
-                          <h4>Roadmap Sample</h4>
-                          <figure style="max-width:2110px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa35adaa60712307dbc3107_Roadmap%20New%20new.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                          <h4><strong>Partnerships Management</strong></h4>
-                          <p>I also manage our external collaborations with other organizations through
-                              partnerships. Our complete list of partners is in the appendix.</p>
-                          <p>In the beginning, I made the mistake of saying yes to all organizations who requested
-                              to partner. Many of them looked for free design work and “shoutout for shoutout.” We
-                              let some go and made sure all partners have a mutually beneficial relationship. We
-                              set clear roles and expectations. We focus on quality over quantity.</p>
-                      </div>
-                  </div>
-                  <div id="Marketing-Design">
-                      <div class="w-richtext">
-                          <p>‍</p>
-                          <p>‍</p>
-                          <h2><strong>Marketing Design</strong></h2>
-                          <p>I design all the marketing and social media posts for the community using our
-                              branding and tone. Here are some highlighted works.</p>
-                          <p>‍</p>
-                          <h4>Guest Speakers</h4>
-                          <figure style="max-width:4940px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa35bf6308ce4096ab8f176_DB%20-%20Guest%20Speakers%20new.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                          <p>‍</p>
-                          <h4>Community Meetups</h4>
-                          <figure style="max-width:4940px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa35c11154cd64e651c4f9d_DB%20-%20Community%20Meetups%20new.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                          <p></p>
-                          <h4>Panels</h4>
-                          <figure style="max-width:4940px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa35c497171aa64e01cf773_DB%20-%20Panels%20new%20new.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                          <p>‍</p>
-                          <h4>Partnerships</h4>
-                          <figure style="max-width:4940px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa38593cd1ee83689218bf9_DB%20-%20Partnerships%20new.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                      </div>
-                  </div>
-                  <div id="Growth">
-                      <div class="rich-text-block-18 w-richtext">
-                          <p>‍</p>
-                          <p>‍</p>
-                          <h2>Growth</h2>
-                          <p>Our growth comes organically through members and admins sharing about us on social
-                              media. We also focus on: </p>
-                          <ul role="list">
-                              <li><strong>Feedback: </strong>Defining needs through qualitative and quantitative
-                                  feedback. We collect feedback through our focus group meetings (top 20 active
-                                  members), 1:1 chats, and surveys.</li>
-                          </ul>
-                          <ul role="list">
-                              <li><strong>Empowering others</strong>: I identify top contributing members in the
-                                  community and enable them to lead clubs and host events based on their
-                                  interests.</li>
-                          </ul>
-                          <ul role="list">
-                              <li>Playful and welcoming branding</li>
-                              <li>Fulfilling a need (demystifying path to design, social connections, and a more
-                                  casual community) and being inclusive</li>
-                              <li>Maintaining a healthy community with clear rules and moderation</li>
-                              <li>Public roadmap: Keep members excited</li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div id="Events">
-                      <div class="rich-text-block-6 w-richtext">
-                          <p>‍</p>
-                          <p>‍</p>
-                          <h2>Events</h2>
-                          <p>Events drive community engagement by providing a way for members to meet each other
-                              and also drive post-event discussions.</p>
-                          <p>‍</p>
-                          <figure style="max-width:1780px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa3d1617171aaeb691e63b4_events%20new.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                      </div>
-                  </div>
-                  <div id="Program-Highlights">
-                      <div class="w-richtext">
-                          <p>‍</p>
-                          <p>‍</p>
-                          <h2>Program Highlights</h2>
-                          <h4>Mentorship Program</h4>
-                          <figure style="max-width:2400pxpx"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f8b969b31dcca0d2cbd2c4e_Design%20Buddies%20x%20ADPList.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                          <p>With Amazing Design People List (ADPList), we have built our mentorship program.</p>
-                          <p>Mentors from Design Buddies can sign up to receive their own card on ADPList after
-                              going through a vetting process. Mentors are part of a mentor community and are
-                              invited to give talks to the community.</p>
-                          <p>Mentees may reach out to mentors on ADPList after reading through the <a
-                                  href="https://gracelingcom.files.wordpress.com/2020/09/adplist-x-design-buddies-mentee-guide.pdf"
-                                  target="_blank">Mentee Guide</a> Brian and I worked on.</p>
-                          <p>‍</p>
-                          <h4><strong>Hop Land Community File</strong></h4>
-                          <p>As part of Camp Figma, I teamed up with Nadia and Marissa from our admin team to
-                              build Hop Land – a game design system that utilizes design systems in Figma.</p>
-                          <p><a href="https://www.figma.com/community/file/879500810136044987/Hop-Land-(Remix-Level-Designer)"
-                                  target="_blank">Make your own Hop Land here</a></p>
-                          <p>‍</p>
-                          <figure style="max-width:3840pxpx"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f8b9727cc42bed0026067f2_Hop%20Land%20Cover.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                          <p>‍</p>
-                          <h4>Design System</h4>
-                          <p>We made sprites as components.</p>
-                          <figure style="max-width:6278px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa385e130155feff3550b42_Design%20system%20hop%20land%20new.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                      </div>
-                  </div>
-                  <div id="Future-Plans">
-                      <div class="w-richtext">
-                          <p>‍</p>
-                          <h2>Future Plans</h2>
-                          <h4>High Level Roadmap</h4>
-                          <p>‍</p>
-                          <figure style="max-width:2228px"
-                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                              <div><img
-                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa38547c7b5ba4a161bcdfa_roadmap%20new%20end.png"
-                                      loading="lazy" alt="" /></div>
-                          </figure>
-                      </div>
-                  </div>
-                  <div id="Lessons-Learned">
-                      <div class="rich-text-block-7 w-richtext">
-                          <p>‍</p>
-                          <p>‍</p>
-                          <h2>Lessons Learned</h2>
-                          <ul role="list">
-                              <li><strong>Focus on needs leads to growth.</strong> We focus on building a
-                                  beginner-friendly community and fostering social connections during COVID-19.
-                              </li>
-                              <li><strong>Listen to feedback.</strong> We have an anonymous feedback form and
-                                  suggestions channel for server improvements. We act on ideas from members of the
-                                  community.</li>
-                              <li><strong>Inclusivity and diversity.</strong> We focus on creating a safe space
-                                  for everyone by establishing ground roles and enforcing a disciplinary action to
-                                  those who are disrespectful or scam.</li>
-                              <li><strong>It takes a village.</strong> I’m grateful for everyone who has reached
-                                  out to be an admin. It is impossible to handle growing and maintaining a
-                                  community by myself.</li>
-                              <li><strong>If you try to satisfy everyone, you will satisfy no one. </strong>We
-                                  focused on a target demographic at first (college students), designed for their
-                                  needs, and expanded from there.</li>
-                              <li><strong>The best way to complain is to make something. </strong>Design Buddies
-                                  all started because I didn’t feel like I fit in as a beginner in other design
-                                  communities.</li>
-                          </ul>
-                      </div>
-                  </div>
+                  <!--
                   <div>
                       <div class="w-richtext">
                           <p>‍</p>
@@ -672,21 +497,12 @@ border-radius: 15px;}
                               <div><span class="text-span-56">Case Study →</span></div>
                           </a></div>
                   </div>
+                  -->
               </div>
           </div>
       </div>
   </div>
-  <div class="footer">
-      <div class="container">
-          <div class="footer-link-wrap"><a href="/" class="footer-logo w-inline-block"><img
-                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fb2082f0cbef184171ce1c8_temp%20logo.png"
-                      width="29" alt="" /></a>
-              <div class="nav-menu-footer"><a href="/about" class="nav-link">About</a><a href="/projects"
-                      class="nav-link">Projects</a><a href="/playground" class="nav-link">Playground</a><a
-                      href="/public-speaking" class="nav-link">Community</a></div>
-          </div>
-      </div>
-  </div>
+  
 </div>
 
 
