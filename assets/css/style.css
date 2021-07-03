@@ -1,5 +1,5 @@
 body {
-	background: #eeeeee00;
+	background: #ffffff00;
 	font-family: "Varela Round", sans-serif;
   }
   .form-inline {
@@ -10,7 +10,7 @@ body {
   }
   .navbar {
 	position: fixed;
-	background: rgba(255, 255, 255, 0);
+	background: rgb(255, 255, 255);
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-bottom: 24px;
