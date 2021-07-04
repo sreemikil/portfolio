@@ -860,7 +860,6 @@ body {
 .bg-block-blue1{
     box-sizing: border-box;
     position: absolute;
-    background-size: cover;
     left: 0%;
     top: 0%;
     right: auto;
@@ -868,7 +867,7 @@ body {
     z-index: -1;
     max-height: 100%;
     min-height: 500px;
-    min-width: 400px;
+    min-width: 360px;
     border-top-right-radius: 55px;
     border-bottom-right-radius: 55px;
     background-color: #f8f8ff;
