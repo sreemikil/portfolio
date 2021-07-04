@@ -52,7 +52,7 @@ body {
 	color: #555;
 	padding-left: 32px;
 	font-size: 20px;
-	padding-right: 42%;
+	padding-right: 26%;
 	font-family: "Raleway", sans-serif;
   }
   .navbar .navbar-brand b {
@@ -861,7 +861,6 @@ body {
     box-sizing: border-box;
     position: absolute;
     left: 0%;
-    top: 0%;
     right: auto;
     bottom: auto;
     z-index: -1;
