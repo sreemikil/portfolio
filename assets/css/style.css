@@ -861,6 +861,7 @@ body {
     box-sizing: border-box;
     position: absolute;
     left: 0%;
+    top: 0%;
     right: auto;
     bottom: auto;
     z-index: -1;
