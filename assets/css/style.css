@@ -860,6 +860,7 @@ body {
 .bg-block-blue1{
     box-sizing: border-box;
     position: absolute;
+    background-size: cover;
     left: 0%;
     top: 0%;
     right: auto;
