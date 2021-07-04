@@ -230,6 +230,13 @@ border-radius: 15px;}
 
 
 
+@media screen and (max-width: 479px){
+.div-block-5 {
+    display: none;
+}
+}
+
+
 
 
 
@@ -290,9 +297,9 @@ border-radius: 15px;}
 		
 		<img src="img/gallery/wrk1main.png" id="w-node-_889b0a19-90e7-4d5f-130a-3c096ec4fa77-691629da" sizes="(max-width: 479px) 22vw, (max-width: 767px) 28vw, 100vw"alt="Photo of mikil" class="about-photo wrk"/>
 	</div>
-    
+    <div style="height: 1035px; position: absolute;" class="bg-block-blue"></div>
 </header>
-<div style="height: 1035px;" class="bg-block-blue"></div>
+
 
 <!-- project-->
 
@@ -327,14 +334,14 @@ border-radius: 15px;}
                       <div class="w-row">
                           <div class="w-col w-col-4">
                               <div class="w-richtext">
-                                  <p><strong>Skills</strong>‍</p>
+                                <h4><strong>Skills</strong></h4>
                                   <p>UI Design</p>
                                   <p>User Research</p>
                               </div>
                           </div>
                           <div class="w-col w-col-4">
                               <div class="w-richtext">
-                                  <p><strong>Team</strong></p>
+                                <h4><strong>Team</strong></h4>
                                   <p><strong>‍</strong>Myself</p>
                                   <p>Akhil T J</p>
                                   <p>Suvarnesh K M</p>
@@ -342,7 +349,7 @@ border-radius: 15px;}
                           </div>
                           <div class="w-col w-col-4">
                               <div class="w-richtext">
-                                  <p><strong>My Role</strong></p>
+                                  <h4><strong>My Role</strong></h4>
                                   <p>UI/UX Designer</p>
                                   <p>‍</p>
                               </div>
@@ -554,20 +561,20 @@ border-radius: 15px;}
 
 	
 <script>
-	function openCity(evt, cityName) {
-	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName("tabcontent");
-	  for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	  }
-	  tablinks = document.getElementsByClassName("tablinks");
-	  for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	  }
-	  document.getElementById(cityName).style.display = "block";
-	  evt.currentTarget.className += " active";
-	}
-	
+	var fixmeTop = $('.div-block-5').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.div-block-5').css({
+            position: 'fixed',
+            top: '24',
+        });
+    } else {
+        $('.div-block-5').css({
+            position: 'static'
+        });
+    }
+});
 	</script>
 </body>
 </html>

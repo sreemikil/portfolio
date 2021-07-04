@@ -815,3 +815,27 @@ body {
   letter-spacing: -0.04em;
   line-height: 1.2;
 }
+
+
+.w-col{
+  margin-bottom: 24px;
+}
+
+.w-richtext  h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Poppins, sans-serif;
+  color: #332256;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.w-col {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
