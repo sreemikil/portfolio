@@ -816,10 +816,22 @@ body {
   margin-bottom: 10px;
   font-family:  Karla, sans-serif;
   color: #55527c;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.01em;
+}
+
+.div-block-5 a{
+  text-decoration: none;
+  color: #34a2cdb0;
+}
+
+
+
+.div-block-5 a:hover{
+  text-decoration: none;
+  color: #130f49;
 }
 
 .w-richtext:before, .w-richtext:after {
