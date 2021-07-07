@@ -784,6 +784,13 @@ body {
   margin-left: -10px;
 }
 
+.content-section {
+    position: relative;
+    padding: 24px 0%;
+}
+
+
+
 .title-project
 {
   -webkit-text-size-adjust: 100%;
