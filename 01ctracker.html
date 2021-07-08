@@ -309,7 +309,7 @@ border-radius: 15px;}
 
 
 <div class="content-section">
-  <div class="container" style="padding-right: 10px;padding-left: 10px;">
+  <div class="container" style="padding-right: 10px;padding-left: 10px;top: 24px;">
       <div class="columns-6 w-row">
           <div class="column-6 w-col w-col-3">
               <div class="div-block-5">
@@ -565,20 +565,30 @@ border-radius: 15px;}
 
 	
 <script>
-	var fixmeTop = $('.div-block-5').offset().top;
-$(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
-    if (currentScroll >= fixmeTop) {
-        $('.div-block-5').css({
-            position: 'fixed',
-            top: '24',
-        });
-    } else {
-        $('.div-block-5').css({
-            position: 'static'
-        });
-    }
-});
+stickyElem = 
+            document.querySelector(".div-block-5"); 
+  
+        /* Gets the amount of height 
+        of the element from the 
+        viewport and adds the 
+        pageYOffset to get the height 
+        relative to the page */ 
+        currStickyPos =  
+          stickyElem.getBoundingClientRect().top + window.pageYOffset; 
+  
+        window.onscroll = function() { 
+  
+            /* Check if the current Y offset 
+            is greater than the position of 
+            the element */ 
+            if (window.pageYOffset > currStickyPos) { 
+                stickyElem.style.position = "fixed"; 
+                stickyElem.style.top = "24px"; 
+            } else { 
+                stickyElem.style.position = "relative"; 
+                stickyElem.style.top = "initial"; 
+            } 
+        } 
 	</script>
 </body>
 </html>
