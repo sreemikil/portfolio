@@ -893,3 +893,8 @@ body {
     height: 1000px;
     overflow: hidden;
 }
+.w-richtext-figure-type-image img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
