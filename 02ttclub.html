@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<title>sreemikil_t</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link href="https://uploads-ssl.webflow.com/58fe4fd8d89baf2a0225849c/css/bengriggs.webflow.6a3b790a3.min.css" rel="stylesheet" type="text/css">
+<style>
+	body {
+            overflow-x: hidden;
+        }
+	.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, .5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+	.navbar-toggler{
+        background-color: #ffffff;
+		height: 50px;
+		border: 0px;
+		border-radius: 18px;
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);	
+		}
+
+		.about-photo {
+	max-height: 500px;
+	align-items: right;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0);	
+}
+	.h1-home{
+		color:#332256;
+	}
+
+	
+
+	.main-section.ux-about-section1 {
+	background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.911) -12.01%, rgba(255, 255, 255, 0.911) 112.26%), url('assets/bg/try.png');
+    padding-top: 10px;
+    background-position: 0 0,50% 50%,50% 50%;
+    background-size: auto,cover,cover;
+    background-repeat: repeat,repeat,no-repeat;
+    background-attachment: scroll,fixed,fixed;
+}
+
+
+@media screen and (max-width: 479px) {
+  .about-photo {
+    display: none;
+  }
+}
+	
+	
+	
+@media screen and (max-width: 479px){}
+.main-section.landing-hero {
+    height: 100vh;
+    max-height: 650px;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+	
+.container{
+	margin-bottom: 48px;
+}	
+
+.project-list-p{
+	color: #BEBEBE;
+}
+
+.h2.h2-underline {
+	border-bottom: 5px solid #3e2a64;
+}
+	
+.h2-footer{
+	font-weight: bold;
+	margin-bottom: 48px;
+}
+
+.h2-footer1{
+	-webkit-text-size-adjust: 100%;
+    font-family: "Varela Round", sans-serif;
+    line-height: 20px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    color: #b4b2c5;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+	
+.h2.h2-footer1 {
+    text-align: center;
+	
+}
+
+
+
+.isotope_fillter {
+  margin-bottom: 50px; }
+  .isotope_fillter .gallery_filter {
+    text-align: center; }
+    .isotope_fillter .gallery_filter li {
+      display: inline-block;
+      margin-right: 45px; }
+      .isotope_fillter .gallery_filter li:last-child {
+        margin-right: 0px; }
+      .isotope_fillter .gallery_filter li a {
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: #222222;
+        transition: all 300ms linear 0s;
+        text-transform: uppercase; }
+      .isotope_fillter .gallery_filter li:hover a, .isotope_fillter .gallery_filter li.active a {
+        color: #766dff; }
+
+.gallery_f_inner {
+  margin-bottom: -45px; }
+
+.img-fluid{
+  border-radius: 5px;
+}
+
+.h_gallery_item {
+  display: inline-block;
+  margin-bottom: 45px; 
+background-color: #ffffff;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+border-radius: 15px;}
+
+
+  .h_gallery_item .g_img_item {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 18px 18px;
+    border-radius: 5px; }
+    .h_gallery_item .g_img_item:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      opacity: 0;
+      transition: all 300ms ease; }
+    .h_gallery_item .g_img_item .light {
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      border-radius: 5px;
+      opacity: 0; }
+  .h_gallery_item .g_item_text {
+    text-align: left;
+	margin-left: 18px;
+	}
+    .h_gallery_item .g_item_text h4 {
+      color:#5D4788;
+      font-size: 24px;
+      margin-top: 8px;
+      transition: all 300ms linear 0s; }
+    .h_gallery_item .g_item_text p {
+		font-size: 16px;
+		margin-top: 4px;
+      margin-bottom: 20px; }
+	  .h_gallery_item .g_item_text h5 {
+		  align-items: center;
+		color:#332256;
+	 font-size: 14px;
+      margin-bottom: 24px; }
+  .h_gallery_item:hover .g_img_item:before {
+    opacity: .85; }
+  .h_gallery_item:hover .g_img_item .light {
+    opacity: 1; }
+  .h_gallery_item:hover .g_item_text h4:hoverh{
+    color: #766dff; }
+
+.more_btn {
+  text-align: center;
+  margin-top: 80px; }
+
+  @media screen and (max-width: 479px){
+.p-text-jumbo.hero-text {
+    text-align: left;
+}
+}
+
+
+
+
+
+.main-section.ux-about-section2 {
+	
+	margin-top: 0px;
+	background-color: #ffffff;
+    padding-top: 10px;
+    background-size: auto,cover,cover;
+    background-repeat: no-repeat;
+}
+
+
+
+@media screen and (max-width: 479px){
+.hero-text1 {
+    text-align: center;
+    margin-bottom: 48px;
+}
+}
+
+@media screen and (max-width: 479px){
+.mose {
+    display: none;
+}
+}
+
+/*wrk*/
+@media screen and (max-width: 479px){
+.wrk {
+    display: initial;
+}
+}
+
+
+
+@media screen and (max-width: 479px){
+.div-block-5 {
+    display: none;
+}
+}
+
+
+
+
+
+	
+</style>
+
+</head> 
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" >
+	<a class="navbar-brand" href="#">Sree<b>mik!l</b>t.</a>  		
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+		<!--<div class="burger-icon w-icon-nav-menu"></div>-->
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<div class="navbar-nav">
+			<a href="index.html" class="nav-item nav-link">Home</a>
+			<a href="about.html" class="nav-item nav-link">About</a>	
+            <!--		
+			<div class="nav-item dropdown">
+				<a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+				<div class="dropdown-menu">					
+					<a href="#" class="dropdown-item">Web Design</a>
+					<a href="#" class="dropdown-item">Web Development</a>
+					<a href="#" class="dropdown-item">Graphic Design</a>
+					<a href="#" class="dropdown-item">Digital Marketing</a>
+                </div>
+            </div>
+            -->
+			<a href="#" class="nav-item nav-link">Portfolio</a>
+            <a href="#" class="nav-item nav-link">Contact</a>
+        </div>
+		<div class="navbar-nav navbar-navs ml-auto">
+			<div class="navbar-form-wrapper">
+            </div>
+			<a href="#" class="nav-item nav-link"><i class="fa fa-behance"></i></a>
+			<a href="#" class="nav-item nav-link"><i class="fa fa-twitter"></i></a>
+			<a href="#" class="nav-item nav-link"><i class="fa fa-instagram"></i></a>
+			<a href="#" class="nav-item nav-link"><i class="fa fa-linkedin"></i></a>
+        </div>		
+	</div>
+</nav>
+
+<header class="main-section landing-hero">
+	<div class="hero-grid">
+		<div id="w-node-b5c36fe5-a762-133e-d45b-faf67eb6f062-691629da" class="hero-text-container">
+			<h1 class="h1-home wrk" >C-Tracker</h1>
+			<p class="p-text-jumbo hero-text1">
+				Track your foot and confirm your footprints.
+			</p>
+			<div class="scroll-down-block-2 w-inline-block mose" style="margin-top: 86px;">
+				<div class="mousey">
+				  <div class="scroller"></div>
+				</div>
+				<div class="cta-link-text" style="color:rgb(190, 190, 190); font-family: Varela Round, sans-serif; font-weight: 700;">Scroll down</div>
+			  </div>
+		</div>
+		
+		<img src="assets/projects/wrk1.png" id="w-node-_889b0a19-90e7-4d5f-130a-3c096ec4fa77-691629da" sizes="(max-width: 479px) 22vw, (max-width: 767px) 28vw, 100vw"alt="Photo of mikil" class="about-photo wrk"/>
+	</div>
+    <div class="bg-block-blue1"></div>
+</header>
+
+
+<!-- project-->
+
+
+<div class="content-section">
+  <div class="container" style="padding-right: 10px;padding-left: 10px;top: 24px;">
+      <div class="columns-6 w-row">
+          <div class="column-6 w-col w-col-3">
+              <div class="div-block-5">
+                  <div class="title-project">CONTENT</div>
+                  <p><a href="#Introduction">Introduction</a></p>
+                  <p><a href="#Objective">Objective</a></p>
+                  <p><a href="#style">Style Guide</a></p>
+                  <p><a href="#usrflw">User Flow</a></p>
+                  <p><a href="#wireframing">Wireframing</a></p>
+                  <p><a href="#fui">Final UI</a></p>
+              </div>
+          </div>
+          <div class="w-col w-col-9">
+              <div>
+                  <div class="title-project">PROJECT</div>
+                  <div id="Introduction">
+                      <div class="rich-text-block open-sans w-richtext">
+                          <h2><strong>CTracker - Track your foot and confirm your footprints.</strong></h2>
+                      </div>
+                      <div class="w-richtext">
+                          <p>Participated in Build From Home by
+                            TinkerHub Foundation and we build a product from scratch and deploy
+                            it successfully in 7 days.</p>
+                          <p>‍</p>
+                      </div>
+                      <div class="w-row">
+                          <div class="w-col w-col-4">
+                              <div class="w-richtext">
+                                <h4><strong>Skills</strong></h4>
+                                  <p>UI Design</p>
+                                  <p>User Research</p>
+                              </div>
+                          </div>
+                          <div class="w-col w-col-4">
+                              <div class="w-richtext">
+                                <h4><strong>Team</strong></h4>
+                                  <p><strong>‍</strong>Myself</p>
+                                  <p>Akhil T J</p>
+                                  <p>Suvarnesh K M</p>
+                              </div>
+                          </div>
+                          <div class="w-col w-col-4">
+                              <div class="w-richtext">
+                                  <h4><strong>My Role</strong></h4>
+                                  <p>UI/UX Designer</p>
+                                  <p>‍</p>
+                              </div>
+                          </div>
+                      </div><!--
+                      <div class="w-richtext">
+                          <p>‍</p>
+                          <p><strong>Team:</strong> Nadia Le, Jess Lam, Maggie Iglesias Pena, Yashar Hoang,
+                              Kimberley Chong, Calum Mills, Nabil Mir, Jack Shugrue, Uju Oduah, Nadiminti Sarvani,
+                              Dario Sanchez Martinez</p>
+                          <p><strong>Strategic Advisors: </strong>Jonathan Javier, Jerry Lee</p>
+                      </div>-->
+                  </div>
+                  <div id="Objective">
+                      <div class="w-richtext">
+                          <p>‍</p>
+                          <p>‍</p>
+                          <h2><strong>Objective</strong></h2>
+                          <p>QR code scanner is a mobile application where shopkeepers have an app that shows QR 
+                              code and users can scan this QR code which will automatically add that user to the 
+                              visitor list. This should replace manual entry of contact details in the shop due to COVID.</p>
+                          <!--<figure style="max-width:2920px"
+                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                              <div><img
+                                      src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5fa21cb0e480abf7064053e5_DB%20Web.png"
+                                      loading="lazy" alt="" /></div>
+                          </figure>-->
+                      </div>
+                  </div>
+                  <!--
+                  <div id="Howitworks">
+                      <div class="w-richtext">
+                          <p>‍</p>
+                          <p>‍</p>
+                          <h2>How it works</h2>
+                          <p><strong>Working of project</strong></p>
+                            <p>
+                                <ul role="list">
+                                    <li>User can login or create an account as merchant or customer.</li>
+                                    <li>User can login using Email and password.</li>
+                                    <li>User can create account by providing details like :</li>
+                                    <ul role="list">
+                                        <li>Profile pic</li>
+                                        <li>Name</li>
+                                        <li>Email</li>
+                                        <li>Pincode</li>
+                                        <li>Vaccine status</li>
+                                    </ul>
+                                    <li>As a customer, he can scan merchants QR code and confirm his footprint.</li>
+                                    <li> Also his previous visits will listed in the home screen.</li>
+                                    <li>As a merchant, he can generate QR code with shop details.</li>
+                                    <li>Also he is able to see daily visitors details and summary.</li>
+                                </ul>
+                            </p>
+                      </div>
+                  </div>-->
+                  
+                  <div id="style">
+                      <div class="w-richtext">
+                          <p>‍</p>
+                          <p>‍</p>
+                          <h2>Style Guide</h2>
+                          <p><strong>Typography</strong></p>
+                          <p> </p>
+                          <figure style="max-width:1978px"
+                            class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                            <div><br><img
+                                    src="assets/projects/ctracker/typo.png"
+                                    loading="lazy" alt="" /></div>
+                          </figure>
+                          <p><strong>Color</strong></p>
+                          <p> </p>
+                          <figure style="max-width:1978px"
+                            class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                            <div><br><img
+                                    src="assets/projects/ctracker/clr.png"
+                                    loading="lazy" alt="" /></div>
+                          </figure>
+                      </div>
+                  </div>
+                  <div id="usrflw">
+                    <div class="w-richtext">
+                        <p>‍</p>
+                        <p>‍</p>
+                        <h2><strong>Userflow</strong></h2>
+                        <p><strong></strong>
+                          <figure style="max-width:1978px"
+                          class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                          <div><br><img
+                                  src="assets/projects/ctracker/userflw.png"
+                                  loading="lazy" alt="" /></div>
+                      </figure>
+                    </div>
+                  <div id="wireframing">
+                    <div class="w-richtext">
+                        <p>‍</p>
+                        <p>‍</p>
+                        <h2><strong>Wireframing</strong></h2>
+                        <p><strong>Low Fidality Wireframing</strong>
+                          <figure style="max-width:1978px"
+                          class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                          <div><br><img
+                                  src="assets/projects/lw1.png"
+                                  loading="lazy" alt="" /></div>
+                          </figure>
+                    </div>
+                </div>
+                  <div id="fui">
+                      <div class="w-richtext">
+                          <p></p>
+                          <p>‍</p>
+                          <h2>Final UI</h2>
+                          <p>These are the final UI.</p>
+                          <figure style="max-width:1978px"
+                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                              <div><img
+                                      src="assets/projects/ctracker/mains2.png"
+                                      loading="lazy" alt="" /></div>
+                          </figure>
+                          <p style="margin-bottom: 12px;"><strong>Design file</strong></p>
+                          <figure style="max-width:1978px"
+                              class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                              <div>
+                                <a href="https://www.figma.com/community/file/997501427444380494/Ctracker---UI-kit">
+                                    <img
+                                      src="img/dsgnban.png"
+                                      loading="lazy" alt="" />
+                                </a>    
+                            </div>
+                          </figure>
+                          <br>
+                          
+                          <p style="margin-bottom: 12px;"><strong>Download now:</strong></p>
+                          <a href="https://drive.google.com/file/d/1AKiJjP-qoJQP1FG9tdlceQLlRSXX3bH_/view?usp=sharing"><img src="img/download.png" 
+                            alt="Download on the App Store" height="48"></a>
+                      </div>
+                  </div>
+                  <!--
+                  <div>
+                      <div class="w-richtext">
+                          <p>‍</p>
+                          <p>‍</p>
+                          <h2>Other Projects</h2>
+                      </div>
+                      <div class="w-layout-grid grid-27"><a href="/electronic-arts-internship"
+                              class="service-card w-inline-block"><img loading="lazy" width="599"
+                                  sizes="(max-width: 479px) 81vw, (max-width: 767px) 80vw, (max-width: 991px) 62vw, 599px"
+                                  src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76e2fb1ad393e4fdbcbabb_Electronic-Arts-Logo.jpg"
+                                  srcset="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76e2fb1ad393e4fdbcbabb_Electronic-Arts-Logo-p-500.jpeg 500w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76e2fb1ad393e4fdbcbabb_Electronic-Arts-Logo-p-800.jpeg 800w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76e2fb1ad393e4fdbcbabb_Electronic-Arts-Logo-p-1600.jpeg 1600w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76e2fb1ad393e4fdbcbabb_Electronic-Arts-Logo.jpg 1920w"
+                                  alt="" class="image" />
+                              <h3 class="open-sans-702"><span class="open-sans-700">Electronic
+                                      Arts<br /></span><span class="text-span-27">UX Design Internship</span></h3>
+                              <div><span class="text-span-56">Case Study →</span></div>
+                          </a><a href="/cell-fie" class="service-card w-inline-block"><img loading="lazy"
+                                  width="599"
+                                  sizes="(max-width: 479px) 81vw, (max-width: 767px) 80vw, (max-width: 991px) 62vw, 599px"
+                                  src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76efc356d70f54f77aea34_cellfie%20start.jpg"
+                                  srcset="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76efc356d70f54f77aea34_cellfie%20start-p-800.jpeg 800w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76efc356d70f54f77aea34_cellfie%20start-p-1600.jpeg 1600w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76efc356d70f54f77aea34_cellfie%20start-p-2000.jpeg 2000w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76efc356d70f54f77aea34_cellfie%20start.jpg 2048w"
+                                  alt="" class="image" />
+                              <h3 class="open-sans-702"><span class="open-sans-700">Cell-fie<br />‍</span><span
+                                      class="text-span-27">Biology-Inspired Virtual Reality Game</span></h3>
+                              <div><span class="text-span-56">Case Study →</span></div>
+                          </a><a href="/discord-bookmarks" class="service-card w-inline-block"><img loading="lazy"
+                                  width="599"
+                                  sizes="(max-width: 479px) 81vw, (max-width: 767px) 80vw, (max-width: 991px) 62vw, 599px"
+                                  src="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76f0f551fc03cb0c5ba1e7_Cover.png"
+                                  srcset="https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76f0f551fc03cb0c5ba1e7_Cover-p-500.png 500w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76f0f551fc03cb0c5ba1e7_Cover-p-800.png 800w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76f0f551fc03cb0c5ba1e7_Cover-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76f0f551fc03cb0c5ba1e7_Cover-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76f0f551fc03cb0c5ba1e7_Cover-p-2000.png 2000w, https://uploads-ssl.webflow.com/5f74501aa02833f80fc16d83/5f76f0f551fc03cb0c5ba1e7_Cover.png 2152w"
+                                  alt="" class="image" />
+                              <h3 class="open-sans-702"><span class="open-sans-700">Discord<br />‍</span><span
+                                      class="text-span-27">Bookmark Feature Mobile App Design</span></h3>
+                              <div><span class="text-span-56">Case Study →</span></div>
+                          </a></div>
+                  </div>
+                  -->
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</div>
+
+
+<!-- footer-->
+
+<div class="footer">
+        <div class="container" style="margin-bottom: 12px;">
+            <div class="footer-card">
+                <div class="footer-content-wrap">
+                    <div class="title">CONTACT ME</div>
+                    <h2 class="footer-h2">Got a Project? Lets Talk!</h2>
+					
+                    <div class="footer-mail-wrap"><img
+                            src="https://assets.website-files.com/5f067b661807eb95a36fe56a/5f067b661807ebbbf06fe5e2_Mail.svg"
+                            alt="" class="mail-icon" />
+                        <div class="footer-email">sreemikilt@gmail.com</div>
+                    </div>
+                </div>
+                <div class="footer-link-wrap">
+					<div class="title">Find me on</div>
+                    
+                    <div class="nav-menu-footer">
+						<div class="footer-logo facebk"><img
+                            src="assets/svg/f-facebook.svg"
+                            width="29" class="fb123" alt="" />
+						</div>
+						<div class="footer-logo"><img
+							src="assets/svg/f-insta.svg"
+							width="29" alt="" />
+						</div>
+						<div class="footer-logo"><img
+							src="assets/svg/f-behance.svg"
+							width="29" alt="" />
+						</div>
+						<div class="footer-logo"><img
+							src="assets/svg/f-linkedin.svg"
+							width="29" alt="" />
+						</div>
+						
+					</div>
+                </div>
+            </div>
+            
+        </div>
+		<div class="legal-text-wrap">
+			<div class="footer-legal-text">© Sreemikil_t 2021.</div>
+		</div>
+    </div>
+
+	
+<script>
+stickyElem = 
+            document.querySelector(".div-block-5"); 
+  
+        /* Gets the amount of height 
+        of the element from the 
+        viewport and adds the 
+        pageYOffset to get the height 
+        relative to the page */ 
+        currStickyPos =  
+          stickyElem.getBoundingClientRect().top + window.pageYOffset; 
+  
+        window.onscroll = function() { 
+  
+            /* Check if the current Y offset 
+            is greater than the position of 
+            the element */ 
+            if (window.pageYOffset > currStickyPos) { 
+                stickyElem.style.position = "fixed"; 
+                stickyElem.style.top = "24px"; 
+            } else { 
+                stickyElem.style.position = "relative"; 
+                stickyElem.style.top = "initial"; 
+            } 
+        } 
+	</script>
+</body>
+</html>
