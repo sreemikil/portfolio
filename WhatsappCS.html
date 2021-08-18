@@ -571,16 +571,19 @@ stickyElem = document.querySelector(".div-block-5");
           stickyElem.getBoundingClientRect().top + window.pageYOffset; 
   
         window.onscroll = function() { 
-  
+            
             /* Check if the current Y offset 
             is greater than the position of 
             the element */ 
-            if (window.pageYOffset > currStickyPos) { 
+            if (window.pageYOffset > currStickyPos) 
+            { 
                 stickyElem.style.position = "fixed"; 
                 stickyElem.style.top = "24px";
-            } else { 
-                stickyElem.style.position = "relative"; 
-                stickyElem.style.top = "initial"; 
+            } 
+            else 
+            { 
+                stickyElem.style.position = "absolute"; 
+                stickyElem.style.top = "0px"; 
             } 
         } 
 	</script>
