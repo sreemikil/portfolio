@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 <title>sreemikil_t</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -449,37 +450,15 @@ border-radius: 15px;}
 
 
 
-                          <div class="slideshow-container">
-
-                                <div class="mySlides fade">
-                                    <div class="numbertext">1 / 3</div>
-                                    <img src="assets/projects/Livangle/sh1.png" style="width:100%">
-                                    <div class="text">Caption Text</div>
-                                </div>
-                                
-                                <div class="mySlides fade">
-                                    <div class="numbertext">2 / 3</div>
-                                    <img src="assets/projects/Livangle/sh2.png" style="width:100%">
-                                    <div class="text">Caption Two</div>
-                                </div>
-                                
-                                <div class="mySlides fade">
-                                    <div class="numbertext">3 / 3</div>
-                                    <img src="assets/projects/Livangle/sh3.png" style="width:100%">
-                                    <div class="text">Caption Three</div>
-                                </div>
-                                
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            
-                            </div>
-                            <br>
-
-                            <div style="text-align:center">
-                              <span class="dot" onclick="currentSlide(1)"></span> 
-                              <span class="dot" onclick="currentSlide(2)"></span> 
-                              <span class="dot" onclick="currentSlide(3)"></span> 
-                            </div>
+                          <div class="w3-content w3-display-container">
+                            <img class="mySlides" src="assets/projects/Livangle/sh1.png" style="width:100%">
+                            <img class="mySlides" src="assets/projects/Livangle/sh2.png" style="width:100%">
+                            <img class="mySlides" src="assets/projects/Livangle/sh3.png" style="width:100%">
+                            <img class="mySlides" src="assets/projects/Livangle/sh3.png" style="width:100%">
+                          
+                            <button class="w3-button w3-black w3-display-left lb" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="w3-button w3-black w3-display-right rb" onclick="plusDivs(1)">&#10095;</button>
+                          </div>
 
 
 
@@ -603,33 +582,24 @@ stickyElem =
 	</script>
 
 <script>
-   var slideIndex = 1;
-showSlides(slideIndex);
+    var slideIndex = 1;
+showDivs(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showDivs(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  x[slideIndex-1].style.display = "block";  
 }
-    </script>
+</script>
     
 </body>
 </html>
