@@ -898,3 +898,23 @@ body {
   vertical-align: middle;
   display: inline-block;
 }
+
+
+
+
+
+/*slideshow*/
+
+.mySlides {display: none;}
+
+.lb {
+  border-radius: 50%;
+  width:45px;
+  opacity: 50%;
+  }
+  
+  .rb {
+    border-radius: 50%;
+    width:45px;
+    opacity: 50%;
+    }
