@@ -63,6 +63,9 @@ body {
   .navbar .navbar-nav a:focus {
 	color: #332256 !important;
   }
+  .navbar .active {
+    color: #332256 !important;
+  }
   .navbar .navbar-nav a.active,
   .navbar .navbar-nav a.active:hover {
 	color: #332256 !important;
