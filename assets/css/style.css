@@ -270,6 +270,12 @@ body {
 	display: none;
 	/* padding: 0px 8px; */
   }
+.tabcontent h1{
+  font-family: Varela Round, sans-serif
+}
+.tabcontent p{
+  font-family: Varela Round, sans-serif
+}
 
   @media screen and (max-width: 479px){
 	.profile_inner .personal_text {
@@ -920,4 +926,159 @@ body {
     border-radius: 50%;
     width:45px;
     opacity: 50%;
+    }
+
+
+
+    .mainsection
+      {padding-right: 20px;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        font-family: "Open Sans";
+      }
+
+
+    .education {
+      --bgi-color: #ffd861;
+      --bg-color-light: #ffeeba;
+      --text-color-hover: #4C5656;
+      --box-shadow-color: rgba(255, 215, 97, 0.48);
+    }
+    
+    .credentialing {
+      --bgi-color: #B8F9D3;
+      --bg-color-light: #e2fced;
+      --text-color-hover: #4C5656;
+      --box-shadow-color: rgba(184, 249, 211, 0.48);
+    }
+    
+    .wallet {
+      --bgi-color: #CEB2FC;
+      --bg-color-light: #F0E7FF;
+      --text-color-hover: #fff;
+      --box-shadow-color: rgba(206, 178, 252, 0.48);
+    }
+    
+    .human-resources {
+      --bgi-color: #DCE9FF;
+      --bg-color-light: #f1f7ff;
+      --text-color-hover: #4C5656;
+      --box-shadow-color: rgba(220, 233, 255, 0.48);
+    }
+    
+    .card {
+      width: 360px;
+      height: 300px;
+      background: #fff;
+      border-top-right-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+      position: relative;
+      box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+      transition: all 0.3s ease-out;
+      text-decoration: none;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px) scale(1.005) translateZ(0);
+      box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+        0 24px 46px var(--box-shadow-color);
+    }
+    
+    .card:hover .overlay {
+      transform: scale(6) translateZ(0);
+    }
+    
+    .card:hover .circle {
+      border-color: var(--bg-color-light);
+      background: var(--bgi-color);
+    }
+    
+    .card:hover .circle:after {
+      background: #ffffff00;
+    }
+    
+    .card:hover p {
+      color: var(--text-color-hover);
+    }
+    
+    .card:active {
+      transform: scale(1) translateZ(0);
+      box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+        0 15px 24px var(--box-shadow-color);
+    }
+    
+    .card p {
+      font-size: 17px;
+      color: #4C5656;
+      margin-top: 30px;
+      z-index: 1000;
+      transition: color 0.3s ease-out;
+    }
+    
+    .circle {
+      width: 131px;
+      height: 131px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid var(--bgi-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s ease-out;
+    }
+    
+    .circle:after {
+      content: "";
+      width: 118px;
+      height: 118px;
+      display: block;
+      position: absolute;
+      background: var(--bg-color);
+      border-radius: 50%;
+      top: 7px;
+      left: 7px;
+      transition: opacity 0.3s ease-out;
+    }
+    
+    .circle svg {
+      z-index: 10000;
+      transform: translateZ(0);
+    }
+    
+    .overlay {
+      width: 90px;
+      position: absolute; 
+      height: 90px;
+      border-radius: 50%;
+      background: var(--bgi-color);
+      top: 73px;
+      z-index: 0;
+      transition: transform 0.3s ease-out;
+    }
+
+    .card:hover h4 {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .mainsection h4{
+      margin-top: 30px;
+      z-index: 1000;
+      transition: color 0.3s ease-out;
+      font-family: Poppins, sans-serif;
+      color: #332256;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      text-decoration: none;
     }
