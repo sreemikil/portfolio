@@ -52,12 +52,14 @@ body {
 	color: #555;
 	padding-left: 32px;
 	font-size: 20px;
-	padding-right: 26%;
-	font-family: "Raleway", sans-serif;
   }
   .navbar .navbar-brand b {
 	font-weight: bold;
 	color: #eb5844;
+  }
+  .navbar-nav
+  {
+    align-items: stretch;
   }
   .navbar .navbar-nav a:hover,
   .navbar .navbar-nav a:focus {
