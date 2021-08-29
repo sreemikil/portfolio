@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body, html {
@@ -10,6 +11,7 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
 }
+
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
@@ -25,7 +27,7 @@ body, html {
 
 .caption {
   position: absolute;
-  left:24px;
+  right:24px;
   bottom: 24px;
   text-align: center;
   color: #000;
@@ -65,11 +67,48 @@ h3 {
     background-attachment: inherit;
   }
 }
+
+
+
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+
+
 </style>
 </head>
 <body>
 
 <div class="bgimg-1" style="background-image: url(logo/logo1.jpg);">
+  
   <div class="caption">
   <span class="border">Youtube Channel Logo</span>
   </div>
@@ -102,9 +141,16 @@ h3 {
 </div>
 <div class="bgimg-1" style="background-image: url(logo/logo7.jpg);">
   <div class="caption">
-  <span class="border">SCROLL DOWN</span>
+  <span class="border"><img src="assets/svg/f-facebook.svg"</span>
   </div>
 </div>
+<div class="container" style="position: fixed; top:20px;">
+  <div class="topnav">
+    <a href="index.html">Home</a>
+  </div>
+</div>
+
+
 
 
 </body>
