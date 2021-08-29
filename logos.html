@@ -33,10 +33,11 @@ body, html {
   color: #000;
 }
 
+
+
 @media screen and (max-width:1200px) {
   .caption{
-    left:0px;
-  bottom: 0px;
+    display: none;
   }
 }
 
@@ -76,8 +77,8 @@ h3 {
 /* Position the navbar container inside the image */
 .container {
   position: absolute;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
   width: auto;
   
 }
@@ -98,13 +99,56 @@ h3 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 12px;
 }
 
 .topnav a:hover {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
+
+
+
+
+
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+.scrollToTopBtn {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.39);
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+
+
 
 
 
@@ -145,18 +189,51 @@ h3 {
   </div>
 </div>
 <div class="bgimg-1" style="background-image: url(logo/logo7.jpg);">
-  <a href="#topone"><div class="caption">
-  <span class="border"><img src="assets/svg/top.svg"/></span>
-  </div></a>
+  
 </div>
+<div class="lstimg" style="bottom:10%;"></div>
+
 <div class="container" style="position: fixed; top:20px;">
   <div class="topnav">
     <a href="index.html">Home</a>
   </div>
 </div>
 
+<button class="scrollToTopBtn"><img src="assets/svg/top.svg"/></button>
+  <script>
+   // We select the element we want to target
+var target = document.querySelector(".lstimg");
 
+var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
 
+// Next we want to create a function that will be called when that element is intersected
+function callback(entries, observer) {
+  // The callback will return an array of entries, even if you are only observing a single item
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Show button
+      scrollToTopBtn.classList.add("showBtn")
+    } else {
+      // Hide button
+      scrollToTopBtn.classList.remove("showBtn")
+    }
+  });
+}
 
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
+    
+// Next we instantiate the observer with the function we created above. This takes an optional configuration
+// object that we will use in the other examples.
+let observer = new IntersectionObserver(callback);
+// Finally start observing the target element
+observer.observe(target);
+      </script>
 </body>
 </html>
