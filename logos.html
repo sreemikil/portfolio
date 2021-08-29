@@ -26,21 +26,29 @@ body, html {
 .caption {
   position: absolute;
   left:24px;
-  bottom: 36px;
+  bottom: 24px;
   text-align: center;
   color: #000;
+}
+
+@media screen and (max-width:1200px) {
+  .caption{
+    left:0px;
+  bottom: 0px;
+  }
 }
 
 .caption span.border {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
 h3 {
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
@@ -63,11 +71,16 @@ h3 {
 
 <div class="bgimg-1" style="background-image: url(logo/logo01.jpg);">
   <div class="caption">
-  <span class="border">SCROLL DOWN</span>
+  <span class="border">Youtube Channel Logo</span>
   </div>
 </div>
 
-<div class="bgimg-1" style="background-image: url(logo/logo01.jpg);">
+<div class="bgimg-1" style="background-image: url(logo/logo02.jpg);">
+  <div class="caption">
+  <span class="border">SCROLL DOWN</span>
+  </div>
+</div>
+<div class="bgimg-1" style="background-image: url(logo/logo03.jpg);">
   <div class="caption">
   <span class="border">SCROLL DOWN</span>
   </div>
