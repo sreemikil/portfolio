@@ -60,7 +60,6 @@ body {
   .navbar-nav
   {
     align-items: stretch;
-    margin-left: 400px;
   }
   .navbar .navbar-nav a:hover,
   .navbar .navbar-nav a:focus {
